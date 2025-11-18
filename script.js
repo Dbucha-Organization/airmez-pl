@@ -104,3 +104,16 @@ prev.addEventListener("click", () => {
   if (index < 0) index = items.length - 1;
   showSlide(index);
 });
+// show more
+const btn = document.querySelector(".desc button");
+const desc = document.querySelector(".desc");
+
+btn.addEventListener("click", () => {
+  desc.classList.toggle("open");
+
+  if (desc.classList.contains("open")) {
+    btn.textContent = "Pokaż Mniej";
+  } else {
+    btn.textContent = "Pokaż Więcej";
+  }
+});

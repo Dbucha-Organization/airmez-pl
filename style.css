@@ -345,7 +345,8 @@ button {
   min-height: 50px;
 }
 
-.product-item h2 {
+.product-item h2,
+.desc-title {
   font-size: 34px;
   font-weight: 800;
   text-transform: uppercase;
@@ -470,6 +471,56 @@ button {
   to {
     background-position: 400% 50%;
   }
+}
+/* desc section */
+.desc {
+  margin: 40px auto;
+  max-width: 768px;
+}
+
+.desc-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.desc-item {
+  display: none;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 25px;
+  padding: 25px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 35px rgba(0, 255, 255, 0.1);
+  color: white;
+}
+.desc-item:first-child {
+  display: block;
+}
+
+.desc.open .desc-item {
+  display: block;
+}
+
+.desc-item h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.desc-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.sub-title {
+  font-weight: 600;
+  font-size: 24px;
+}
+.desc button {
+  border: none;
+  background: transparent;
+  color: #00f8f8;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
 }
 
 /* review section */
