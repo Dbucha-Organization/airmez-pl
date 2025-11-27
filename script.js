@@ -117,3 +117,14 @@ btn.addEventListener("click", () => {
     btn.textContent = "Pokaż Więcej";
   }
 });
+// city div
+const city = document.getElementById("city");
+const cont = document.querySelectorAll(".foot-cont-three a");
+
+city.addEventListener("click", openCont);
+
+function openCont() {
+  Array.from(cont).forEach((el) => {
+    el.style.display = "block";
+  });
+}
